@@ -5,8 +5,6 @@
 // @description     Watch movies on IMDB, TMDB, Kinopoisk and Letterboxd!
 // @version         3.3.3
 // @icon            https://github.com/Kirlovon/Tape-Operator/raw/main/assets/favicon.png
-// @updateURL       https://github.com/Kirlovon/Tape-Operator/raw/main/userscript/tape-operator.user.js
-// @downloadURL     https://github.com/Kirlovon/Tape-Operator/raw/main/userscript/tape-operator.user.js
 // @resource        BANNER_IMAGE https://cdn.jsdelivr.net/gh/Kirlovon/Tape-Operator@main/assets/banner.webp
 // @run-at          document-idle
 // @grant           GM.info
@@ -21,7 +19,7 @@
 // @match           *://www.themoviedb.org/movie/*
 // @match           *://www.themoviedb.org/tv/*
 // @match           *://letterboxd.com/film/*
-// @match           *://tapeop.dev/*
+// @match           *https://hugsaholic.github.io/Tape-Operator/player/*
 // ==/UserScript==
 
 (function () {
@@ -34,7 +32,7 @@
 	const BANNER_IMAGE = GM_getResourceURL('BANNER_IMAGE', false);
 
 	// URL to the player
-	const PLAYER_URL = 'https://tapeop.dev/';
+	const PLAYER_URL = 'https://hugsaholic.github.io/Tape-Operator/player/';
 
 	// ID of the banner, attached to the page
 	const BANNER_ID = 'tape-operator-banner';
